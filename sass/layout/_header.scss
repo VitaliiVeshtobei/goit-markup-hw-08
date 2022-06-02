@@ -1,0 +1,121 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+/* ---------------------main-nav--------------------- */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--accent-color);
+  .logo__dark {
+    color: #000000;
+  }
+}
+
+.logo__white {
+  color: #fff;
+}
+
+/* ---------------------site-nav--------------------- */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  .site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-nav__link--current {
+    position: relative;
+    color: var(--accent-color);
+    &::after {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -1px;
+
+      background: #2196f3;
+      border-radius: 2px;
+    }
+  }
+}
+// .current {
+//   position: relative;
+// }
+
+.site-nav .site-nav__link:hover,
+.site-nav .site-nav__link:focus,
+.contact-footer .site-nav__link:hover,
+.contact-footer .site-nav__link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* ---------------------contact--------------------- */
+
+.contact--header {
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.contact__item--header:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact__link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
