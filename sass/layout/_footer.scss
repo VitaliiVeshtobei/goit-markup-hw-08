@@ -95,9 +95,14 @@
   // right: 28px;
   // transform: translateY(-50%);
 }
+.button__thumb {
+  display: flex;
+  justify-content: center;
+}
 .subscribe-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   // padding-right: 62px;
   // padding-left: 29px;
   margin-top: 20px;

@@ -529,9 +529,15 @@ ul {
   margin-left: 10px;
 }
 
+.button__thumb {
+  display: flex;
+  justify-content: center;
+}
+
 .subscribe-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
 }
 
