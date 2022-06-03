@@ -1,6 +1,7 @@
 .filter-list {
   display: flex;
-  justify-content: center;
+
+  flex-wrap: wrap;
   padding-left: 0;
   font-weight: 500;
   font-size: 16px;
@@ -9,11 +10,21 @@
 
   margin-top: 0;
   margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    margin-top: -15px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
-
+.filter-item {
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
+}
 .filter-title {
   margin-top: 0;
   margin-bottom: 0;

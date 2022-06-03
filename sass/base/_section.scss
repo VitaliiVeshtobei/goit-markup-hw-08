@@ -8,6 +8,9 @@
 }
 .section--no-padding-top {
   padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .section--other-bkg {
   background-color: #f5f4fa;
