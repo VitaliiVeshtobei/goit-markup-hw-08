@@ -455,9 +455,11 @@ ul {
   margin-top: 9px;
 }
 
-.contact-link--footer {
-  display: block;
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .contact-link--footer {
+    display: block;
+    text-align: center;
+  }
 }
 
 .address {
@@ -474,14 +476,39 @@ ul {
   color: #ffffff;
 }
 
-.footer-grow {
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-grow {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-grow {
+    flex-grow: 1;
+  }
 }
 
 /* ---------------------connect--------------------- */
-.connect {
-  margin-top: 60px;
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .connect {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .connect {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect {
+    margin-left: 70px;
+  }
 }
 
 .connect__text {
@@ -495,9 +522,16 @@ ul {
 }
 
 /* ---------------------subscribe--------------------- */
-.subscribe {
-  margin-top: 60px;
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+  }
 }
 
 .subscribe-text {
@@ -513,6 +547,11 @@ ul {
 .subscribe-form {
   margin-top: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+  }
+}
 
 .subscribe-input {
   width: 100%;
@@ -523,6 +562,16 @@ ul {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    width: 358px;
+  }
 }
 
 .subscribe-icon {
@@ -538,7 +587,24 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .subscribe-btn {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-btn {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet__thumb {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
 }
 
 .button {

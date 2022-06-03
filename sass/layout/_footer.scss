@@ -13,8 +13,10 @@
   margin-top: 9px;
 }
 .contact-link--footer {
-  display: block;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    display: block;
+    text-align: center;
+  }
 }
 .address {
   font-weight: 400;
@@ -28,21 +30,35 @@
   margin-bottom: 0;
   color: #ffffff;
 }
-// .footer__container {
-//   // display: flex;
-//   // align-items: baseline;
-// }
+.footer__container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 .footer-grow {
   // flex-grow: 1;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+  }
 }
 
 /* ---------------------connect--------------------- */
 
 .connect {
-  // margin-left: 70px;
-  margin-top: 60px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .connect__text {
@@ -57,9 +73,13 @@
 
 /* ---------------------subscribe--------------------- */
 .subscribe {
-  // margin-left: 93px;
-  margin-top: 60px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .subscribe-text {
   font-weight: 700;
@@ -73,6 +93,9 @@
 .subscribe-form {
   // display: flex;
   margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .subscribe-input {
   // width: 358px;
@@ -85,6 +108,12 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 // .subscribe-field {
 //   // position: relative;
@@ -105,5 +134,18 @@
   justify-content: center;
   // padding-right: 62px;
   // padding-left: 29px;
-  margin-top: 20px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+.tablet__thumb {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
 }
