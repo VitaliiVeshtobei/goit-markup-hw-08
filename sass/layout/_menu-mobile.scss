@@ -70,7 +70,10 @@
   color: #212121;
   text-decoration: none;
 }
-
+.menu-nav__link:hover,
+.menu-nav__link:focus {
+  color: var(--accent-color);
+}
 .menu-nav__item:not(:first-child) {
   margin-top: 32px;
 }
@@ -102,6 +105,7 @@
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
+  color: var(--accent-color);
 }
 .messenger {
   margin: 0;
