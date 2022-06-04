@@ -4,7 +4,9 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 4;
   background: rgba(0, 0, 0, 0.2);
+
   /* transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
   transform: scale(1);
   transition: transform 250ms linear;
@@ -25,8 +27,8 @@
 .modal {
   position: absolute;
   left: 50%;
-  // top: 50%;
-  transform: translate(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   width: 100%;
   height: 581px;
@@ -43,10 +45,6 @@
     width: 528px;
     height: 581px;
   }
-  // @media screen and (max-width: 767px) {
-  //   top: 0;
-  //   transform: translate(-50%);
-  // }
 }
 
 .button-close {
