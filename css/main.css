@@ -1127,6 +1127,11 @@ ul {
     padding: 48px 20px;
   }
 }
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
 
 .menu-nav__list {
   padding: 0px;
