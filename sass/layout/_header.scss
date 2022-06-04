@@ -5,6 +5,14 @@
   display: flex;
   align-items: center;
 }
+.desktop-header {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 /* ---------------------main-nav--------------------- */
 
 .main-nav {
@@ -86,15 +94,16 @@
 /* ---------------------contact--------------------- */
 
 .contact--header {
-  display: flex;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-}
-
-.contact__item--header:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    .contact__item--header:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .contact__link {

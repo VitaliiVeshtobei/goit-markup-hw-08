@@ -105,6 +105,17 @@ ul {
   align-items: center;
 }
 
+.desktop-header {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .desktop-header {
+    display: none;
+  }
+}
+
 /* ---------------------main-nav--------------------- */
 .main-nav {
   display: flex;
@@ -178,15 +189,18 @@ ul {
 
 /* ---------------------contact--------------------- */
 .contact--header {
-  display: flex;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
-
-.contact__item--header:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contact--header {
+    display: flex;
+  }
+  .contact--header .contact__item--header:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contact__link {
