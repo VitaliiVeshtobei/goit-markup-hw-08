@@ -74,6 +74,9 @@
 .menu-nav__link:focus {
   color: var(--accent-color);
 }
+.menu-nav__link--current {
+  color: var(--accent-color);
+}
 .menu-nav__item:not(:first-child) {
   margin-top: 32px;
 }

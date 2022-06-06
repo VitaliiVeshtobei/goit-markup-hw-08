@@ -64,11 +64,12 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.32;
+    max-width: 696px;
   }
 }

@@ -6,7 +6,10 @@
   margin-left: -30px;
   margin-top: 30px;
 
-  margin-bottom: -30px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: -30px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-top: 50px;
   }
@@ -35,6 +38,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid #afb1b8;
+  border-radius: 5px;
   color: #afb1b8;
   transition-property: color, border;
   transition-duration: 250ms;

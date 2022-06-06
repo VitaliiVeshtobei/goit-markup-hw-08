@@ -7,6 +7,9 @@
   text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .advantages__text {
